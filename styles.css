@@ -25,15 +25,15 @@
     --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
     --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
     
-    /* Spacing */
+    /* Spacing - Compact */
     --spacing-xs: 0.25rem;
     --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 1.5rem;
-    --spacing-xl: 2rem;
-    --spacing-2xl: 3rem;
-    --spacing-3xl: 5rem;
-    --spacing-4xl: 8rem;
+    --spacing-md: 0.75rem;
+    --spacing-lg: 1rem;
+    --spacing-xl: 1.5rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 3rem;
+    --spacing-4xl: 4rem;
     
     /* Transitions */
     --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -333,7 +333,7 @@ ul, ol {
    ===================================================== */
 .section-header {
     text-align: center;
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-2xl);
 }
 
 .section-tag {
@@ -343,39 +343,39 @@ ul, ol {
     color: var(--color-gold);
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .section-title {
     font-family: var(--font-serif);
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 400;
     line-height: 1.4;
     color: var(--color-navy);
 }
 
 .section-description {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: var(--color-text-light);
-    margin-top: var(--spacing-md);
+    margin-top: var(--spacing-sm);
 }
 
 /* =====================================================
    Important Section
    ===================================================== */
 .important-section {
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-3xl) 0;
     background: var(--color-white);
 }
 
 .important-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
 }
 
 .important-card {
-    padding: var(--spacing-2xl);
+    padding: var(--spacing-xl);
     background: var(--color-cream);
     border: 1px solid var(--color-border-light);
     transition: all var(--transition);
@@ -383,39 +383,39 @@ ul, ol {
 
 .important-card:hover {
     background: var(--color-white);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
-    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
 }
 
 .card-number {
     display: block;
     font-family: var(--font-serif);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-gold-light);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
 }
 
 .important-card h3 {
     font-family: var(--font-sans);
-    font-size: 1rem;
+    font-size: 0.9375rem;
     font-weight: 600;
     color: var(--color-navy);
-    margin-bottom: var(--spacing-md);
-    line-height: 1.6;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
 }
 
 .important-card p {
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     color: var(--color-text-light);
-    line-height: 1.9;
+    line-height: 1.7;
 }
 
 /* =====================================================
    Articles Section
    ===================================================== */
 .articles-section {
-    padding: var(--spacing-4xl) 0;
+    padding: var(--spacing-3xl) 0;
     background: var(--color-ivory);
 }
 
@@ -423,15 +423,15 @@ ul, ol {
 .featured-article {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
-    gap: var(--spacing-3xl);
-    margin-bottom: var(--spacing-3xl);
-    padding-bottom: var(--spacing-3xl);
+    gap: var(--spacing-2xl);
+    margin-bottom: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
     border-bottom: 1px solid var(--color-border);
 }
 
 .featured-image {
     position: relative;
-    height: 400px;
+    height: 280px;
     background: 
         linear-gradient(135deg, rgba(26, 35, 50, 0.4) 0%, rgba(26, 35, 50, 0.2) 100%),
         url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80') center/cover no-repeat;
@@ -446,10 +446,10 @@ ul, ol {
 
 .featured-category {
     position: absolute;
-    bottom: var(--spacing-lg);
-    left: var(--spacing-lg);
-    padding: var(--spacing-xs) var(--spacing-md);
-    font-size: 0.6875rem;
+    bottom: var(--spacing-md);
+    left: var(--spacing-md);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    font-size: 0.625rem;
     font-weight: 500;
     color: var(--color-white);
     background: rgba(0, 0, 0, 0.4);
@@ -464,34 +464,34 @@ ul, ol {
 
 .featured-content h3 {
     font-family: var(--font-serif);
-    font-size: 1.75rem;
+    font-size: 1.375rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.4;
     color: var(--color-navy);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
 }
 
 .featured-content p {
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
     color: var(--color-text-light);
-    line-height: 1.9;
-    margin-bottom: var(--spacing-lg);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
 }
 
 .featured-meta {
     display: flex;
-    gap: var(--spacing-lg);
-    font-size: 0.75rem;
+    gap: var(--spacing-md);
+    font-size: 0.6875rem;
     color: var(--color-text-muted);
     letter-spacing: 0.05em;
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
 }
 
 /* Article Cards */
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacing-xl);
+    gap: var(--spacing-lg);
 }
 
 .article-card {
